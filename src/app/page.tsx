@@ -118,7 +118,7 @@ export default function Home() {
           />
           <a
             href="#"
-            className="hover:cursor-pointer hover:scale-105 transition-all absolute bottom-3 right-0 bg-[#3338C3] text-white font-poppins rounded-full px-8 py-5 shadow-lg text-md font-semibold"
+            className="hover:cursor-pointer hover:scale-105 transition-all absolute bottom-3 right-0 bg-[#3338C3] text-white font-poppins rounded-full px-8 py-5 shadow-lg text-xs font-semibold"
           >
             Découvrez pourquoi nos clients nous recommandent
           </a>
