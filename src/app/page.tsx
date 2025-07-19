@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </section>
       <section id="tarifs" className="w-full py-10 sm:py-14 md:py-16 bg-white flex flex-col items-center">
-        <h2 className="text-3xl sm:text-6xl md:text-5xl font-league text-black text-center mb-2">
+        <h2 className="text-4xl md:text-5xl font-league text-black text-center mb-2">
           Ils parlent de nous mieux que personne.
         </h2>
         <p className="text-center text-black text-2xs  max-w-2xl mb-1">
