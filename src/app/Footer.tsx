@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:w-1/3">
 
             <h2 className="text-4xl font-league mb-3 flex items-center gap-2">
-              <Image src="/logo-plombierx.png" width={30} height={30} alt="Plombier X" />
+              <Image src="/logo-plombix.png" width={30} height={30} alt="Plombier X" />
               Plombier X.
             </h2>
             <p className="text-sm">

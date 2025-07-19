@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="mx-auto w-[90%] flex flex-row items-center justify-between">
 
         <div className="flex items-center gap-2">
-          <Image src="/logo-plombierx.png" alt="logo" width={30} height={30} />
+          <Image src="/logo-plombix.png" alt="logo" width={30} height={30} />
           <span className="font-league text-2xl font-bold">
             Plombier X<span className="text-[#00B8D9]">.</span>
           </span>

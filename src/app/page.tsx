@@ -12,7 +12,7 @@ export default function Home() {
       alt: "Claire D.",
       name: "Claire D., Propriétaire à Vincennes",
       stars: 5,
-      text: "“Leur service client est exceptionnel. Le plombier a pris le temps de m’expliquer chaque étape. Résultat impeccable du premier appel à aux sans hésitation !”"
+      text: "“Leur service client est exceptionnel. Le plombier a pris le temps de m’expliquer chaque étape. Résultat impeccable du premier appel à aux sans hésitation!”"
     },
     {
       img: "/testimonial-jean.png",
@@ -165,7 +165,7 @@ export default function Home() {
               <span className="text-white text-md">5.0</span>
             </div>
             <p className="text-md text-center mt-10">
-              “Leur service client est exceptionnel. Le plombier a pris le temps de m’expliquer chaque étape. Résultat impeccable du premier appel à aux sans hésitation !”
+              “Leur service client est exceptionnel. Le plombier a pris le temps de m’expliquer chaque étape. Résultat impeccable du premier appel à aux sans hésitation!”
             </p>
           </div>
           <div className="bg-[#3338C3] rounded-2xl w-[300px] min-h-[380px] flex flex-col items-center p-6 text-white shadow-lg hover:cursor-pointer hover:scale-95 hover:translate-y-3 transition-all">
@@ -254,7 +254,6 @@ export default function Home() {
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Diagnostic gratuit</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Intervention sous 2h</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Garantie 1 an</li>
-              <li className="flex items-center gap-2 opacity-40"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>-------</li>
             </ul>
           </div>
           <div className="bg-[#3338C3] rounded-2xl shadow-xl p-8 w-full  md:w-[320px] min-h-[420px] flex flex-col text-white">
@@ -265,7 +264,6 @@ export default function Home() {
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Caméra d&apos;inspection</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Haute pression</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Nettoyage complet</li>
-              <li className="flex items-center gap-2 opacity-40"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>-------</li>
             </ul>
           </div>
           <div className="bg-[#3338C3] rounded-2xl shadow-xl p-8 w-full  md:w-[320px] min-h-[420px] flex flex-col text-white">
@@ -276,7 +274,6 @@ export default function Home() {
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Diagnostic gratuit</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Intervention sous 2h</li>
               <li className="flex items-center gap-2"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>Garantie 1 an</li>
-              <li className="flex items-center gap-2 opacity-40"><span className="w-3 h-3 bg-white rounded-full inline-block"></span>-------</li>
             </ul>
           </div>
         </div>
@@ -326,14 +323,13 @@ export default function Home() {
       </section>
 
       <section id="contact" className="w-full h-[40vh] sm:h-[50vh] flex flex-col justify-center items-center text-black md:p-0 p-3">
-        <h2 className="text-5xl sm:text-6xl md:text-5xl mb-1 text-center">Et si vous étiez notre prochain témoignage ?</h2>
+        <h2 className="text-5xl sm:text-6xl md:text-5xl mb-1 text-center">Et si vous étiez notre prochain témoignage?</h2>
         <p className="text-center text-black text-xs sm:text-sm max-w-2xl mt-3">
         Rejoignez les centaines de clients satisfaits partout en Île-de-France. Nous sommes prêts 
-        à intervenir chez vous en moins de 30 minutes – rapide, propre, garanti.
+        à intervenir chez vous en moins de 30 minutes rapide, propre, garanti.
         </p>
       <button className="btn bg-black text-white mt-5 hover:cursor-pointer hover:scale-105 transition-all">Obtenez -15% maintenant</button>
       </section>
-
 
       <Footer />
     </div>
