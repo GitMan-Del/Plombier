@@ -12,11 +12,11 @@ export default function Footer() {
           <div className="md:w-1/3">
 
             <h2 className="text-4xl font-league mb-3 flex items-center gap-2">
-              <Image src="/logo-plombix.png" width={30} height={30} alt="Plombix" />
-              Plombix.
+              <Image src="/logo-plombierx.png" width={30} height={30} alt="Plombier X" />
+              Plombier X.
             </h2>
             <p className="text-sm">
-              Plombix est votre partenaire de confiance pour tous vos besoins en plomberie à Paris et en Île-de-France. Interventions rapides, dépannage d&apos;urgence, installations et rénovations avec professionnalisme, clarté et garantie.
+              Plombier X est votre partenaire de confiance pour tous vos besoins en plomberie à Paris et en Île-de-France. Interventions rapides, dépannage d&apos;urgence, installations et rénovations avec professionnalisme, clarté et garantie.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="text-blue-300" />
-                Email: contact@plombix.fr
+                Email: contact@plombierx.fr
               </li>
               <li>
                 Horaires: 7j/7 - 09h à 22h
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-10 pt-6 text-left text-md text-white/70">
-          © 2025 Plombix – Tous droits réservés
+          © 2025 Plombier X – Tous droits réservés
         </div>
       </div>
     </footer>

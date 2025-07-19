@@ -243,7 +243,7 @@ export default function Home() {
       <section className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
         <h2 className="text-5xl  md:text-6xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
         <p className="text-center text-black text-md sm:text-sm max-w-2xl mb-6">
-          Chez <span className="text-[#3338C3]">Plombix</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
+          Chez <span className="text-[#3338C3]">Plombier X</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
         </p>
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-8 md:mb-12 w-full items-center justify-center">
           <div className="bg-[#3338C3] rounded-2xl shadow-xl p-8 w-full md:w-[320px] min-h-[420px] flex flex-col text-white">
