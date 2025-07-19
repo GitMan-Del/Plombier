@@ -46,12 +46,12 @@ export default function Home() {
           <h1 className="text-7xl sm:text-7xl md:text-7xl lg:text-7xl text-white max-w-[800px] leading-tight">
           Plombier à Paris et Île-de-France Intervention rapide & efficace
           </h1>
-          <p className="text-lg  text-white max-w-[800px]">
+          <p className="text-md  text-white max-w-[800px]">
           Fuite d’eau? Canalisation bouchée? Besoin d’un dépannage en urgence? Nos artisans plombiers interviennent 7j/7 à Paris, Val-de-Marne, Hauts-de-Seine, Seine-Saint-Denis et toute l’Île-de-France.
           </p>
           <div className="gap-4 flex flex-row items-center mt-5">
-          <button className="btn bg-white text-black text-2xs md:text-lg hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</button>
-          <a className="text-white hover:underline md:text-lg  text-2xs" href="/aa">Explorez nos prestations →</a>
+          <button className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</button>
+          <a className="text-white hover:underline md:text-md  text-2xs" href="/aa">Explorez nos prestations →</a>
           </div>
         </div>
         <div className="w-[90%] gap-5 absolute bottom-10 flex flex-row z-20 ">
@@ -63,14 +63,14 @@ export default function Home() {
       </div>
     </main>
       <section id="services" className="-space-y-15 z-20 min-w-fit">
-        <div className="overflow-hidden bg-[#3338C3] py-4 sm:py-3 text-lg sm:text-lg -rotate-1 text-white">
+        <div className="overflow-hidden bg-[#3338C3] py-4 sm:py-3 text-md sm:text-md -rotate-1 text-white">
           <div className="flex whitespace-nowrap gap-10 animate-marquee">
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
           </div>
         </div>
-        <div className="overflow-hidden bg-black py-4 sm:py-3 text-lg sm:text-lg rotate-1 text-white">
+        <div className="overflow-hidden bg-black py-4 sm:py-3 text-md sm:text-md rotate-1 text-white">
           <div className="flex whitespace-nowrap gap-10 animate-marquee">
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
@@ -103,7 +103,7 @@ export default function Home() {
             <div className="md:flex hidden  bg-[#3338C3] rounded-xl p-2 items-center justify-center">
               <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M8 12l4-4 4 4M12 16V8"/></svg>
             </div>
-            <span className="text-lg text-black font-poppins">
+            <span className="text-md text-black font-poppins">
               Chaque intervention est une promesse tenue  rapidité, propreté et efficacité, partout en Île-de-France.
             </span>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
           />
           <a
             href="#"
-            className="hover:cursor-pointer hover:scale-105 transition-all absolute bottom-3 right-0 bg-[#3338C3] text-white font-poppins rounded-full px-8 py-5 shadow-lg text-lg font-semibold"
+            className="hover:cursor-pointer hover:scale-105 transition-all absolute bottom-3 right-0 bg-[#3338C3] text-white font-poppins rounded-full px-8 py-5 shadow-lg text-md font-semibold"
           >
             Découvrez pourquoi nos clients nous recommandent
           </a>
@@ -126,15 +126,15 @@ export default function Home() {
         <div className="flex md:flex-col justify-between md:w-[18%] md:min-w-[150px] w-full text-black font-poppins">
           <div>
             <div className="text-7xl text-center md:text-start">12+</div>
-            <div className="text-lg text-center md:text-start">ann&eacute;es d&apos;exp&eacute;rience dans la plomberie</div>
+            <div className="text-md text-center md:text-start">ann&eacute;es d&apos;exp&eacute;rience dans la plomberie</div>
           </div>
           <div>
             <div className="text-7xl text-center md:text-start">1</div>
-            <div className="text-lg text-center md:text-start">objectif: votre satisfaction</div>
+            <div className="text-md text-center md:text-start">objectif: votre satisfaction</div>
           </div>
           <div>
             <div className="text-7xl text-center md:text-start">400+</div>
-            <div className="text-lg text-center md:text-start">interventions réussies chaque mois</div>
+            <div className="text-md text-center md:text-start">interventions réussies chaque mois</div>
           </div>
         </div>
       </section>
@@ -150,46 +150,46 @@ export default function Home() {
           <div className="w-full flex justify-center">
             <div className="bg-[#3338C3] rounded-2xl w-[300px] min-h-[380px] flex flex-col items-center p-6 text-white shadow-lg transition-all">
               <Image src={testimonials[testimonialIndex].img} alt={testimonials[testimonialIndex].alt} width={64} height={64} className="rounded-full mb-2" />
-              <div className="text-lg mb-1 text-center">{testimonials[testimonialIndex].name}</div>
+              <div className="text-md mb-1 text-center">{testimonials[testimonialIndex].name}</div>
               <div className="flex items-center gap-1 mb-1">
                 <span className="text-yellow-400">★★★★★</span>
-                <span className="text-white text-lg">5.0</span>
+                <span className="text-white text-md">5.0</span>
               </div>
-              <p className="text-lg text-center mt-10">{testimonials[testimonialIndex].text}</p>
+              <p className="text-md text-center mt-10">{testimonials[testimonialIndex].text}</p>
             </div>
           </div>
         </div>
         <div className="hidden md:flex flex-row justify-center gap-8 mt-8 w-full max-w-5xl">
           <div className="bg-[#3338C3] rounded-2xl w-[300px] min-h-[380px] flex flex-col items-center p-6 text-white shadow-lg -rotate-6 hover:cursor-pointer hover:scale-95 hover:translate-y-3 transition-all">
             <Image src="/testimonial-claire.png" alt="Claire D." width={64} height={64} className="rounded-full mb-2" />
-            <div className="text-lg mb-1 text-center">Claire D., Propriétaire à Vincennes</div>
+            <div className="text-md mb-1 text-center">Claire D., Propriétaire à Vincennes</div>
             <div className="flex items-center gap-1 mb-1">
               <span className="text-yellow-400">★★★★★</span>
-              <span className="text-white text-lg">5.0</span>
+              <span className="text-white text-md">5.0</span>
             </div>
-            <p className="text-lg text-center mt-10">
+            <p className="text-md text-center mt-10">
               “Leur service client est exceptionnel. Le plombier a pris le temps de m’expliquer chaque étape. Résultat impeccable du premier appel à aux sans hésitation !”
             </p>
           </div>
           <div className="bg-[#3338C3] rounded-2xl w-[300px] min-h-[380px] flex flex-col items-center p-6 text-white shadow-lg hover:cursor-pointer hover:scale-95 hover:translate-y-3 transition-all">
             <Image src="/testimonial-jean.png" alt="Jean M." width={64} height={64} className="rounded-full mb-2" />
-            <div className="text-lg mb-1 text-center">Jean M., Entrepreneur à Paris</div>
+            <div className="text-md mb-1 text-center">Jean M., Entrepreneur à Paris</div>
             <div className="flex items-center gap-1 mb-1">
               <span className="text-yellow-400">★★★★★</span>
-              <span className="text-white text-lg">5.0</span>
+              <span className="text-white text-md">5.0</span>
             </div>
-            <p className="text-lg text-center mt-10">
+            <p className="text-md text-center mt-10">
               “J’ai contacté Expert de Maison pour une fuite dans ma cuisine. L’équipe est arrivée en 25 minutes, super professionnelle et très rassurante. Travail propre et rapide.”
             </p>
           </div>
           <div className="bg-[#3338C3] rounded-2xl w-[300px] min-h-[380px] flex flex-col items-center p-6 text-white shadow-lg rotate-6 hover:cursor-pointer hover:scale-95 hover:translate-y-3 transition-all">
             <Image src="/testimonial-olivier.png" alt="Olivier S." width={64} height={64} className="rounded-full mb-2" />
-            <div className="text-lg mb-1 text-center">Olivier S., Freelance à Boulogne</div>
+            <div className="text-md mb-1 text-center">Olivier S., Freelance à Boulogne</div>
             <div className="flex items-center gap-1 mb-1">
               <span className="text-yellow-400">★★★★★</span>
-              <span className="text-white text-lg">5.0</span>
+              <span className="text-white text-md">5.0</span>
             </div>
-            <p className="text-lg text-center mt-10">
+            <p className="text-md text-center mt-10">
               “J’ai contacté Expert de Maison pour une fuite dans ma cuisine. L’équipe est arrivée en 25 minutes, super professionnelle et très rassurante. Travail propre et rapide.”
             </p>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-6xl md:text-7xl mb-2 font-league text-black leading-tight text-left">
               Vous avez un besoin?<br />Nous avons la solution.
             </h2>
-            <p className="text-lg  text-black mt-4 text-left">
+            <p className="text-md  text-black mt-4 text-left">
               Que ce soit o urgence sau proiect de renovare, intervenim rapid cu profesionalism.
             </p>
           </div>
@@ -218,26 +218,26 @@ export default function Home() {
             <div className="bg-[#3338C3] rounded-xl p-5 text-white shadow flex flex-col min-h-[150px]">
               <div className="w-5 h-5 bg-gray-300 rounded mb-2" />
               <div className="text-left text-2xl font-bold">Dépannage express</div>
-              <div className="text-lg mt-1 mb-3 text-left">Notre équipe intervient en moins de 30 minutes pour toute fuite ou problème urgent.</div>
-              <a href="#" className="text-lg underline mt-auto text-left">En savoir plus &gt;</a>
+              <div className="text-md mt-1 mb-3 text-left">Notre équipe intervient en moins de 30 minutes pour toute fuite ou problème urgent.</div>
+              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
             </div>
             <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
               <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
               <div className="text-left text-2xl font-bold">Installation sanitaire</div>
-              <div className="text-lg mt-1 mb-3 text-left">Pose ou remplacement de WC, lavabos, robinetterie, ballon d’eau chaude clé en main.</div>
-              <a href="#" className="text-lg underline mt-auto text-left">En savoir plus &gt;</a>
+              <div className="text-md mt-1 mb-3 text-left">Pose ou remplacement de WC, lavabos, robinetterie, ballon d’eau chaude clé en main.</div>
+              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
             </div>
             <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
               <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
               <div className="text-left text-2xl font-bold">Débouchage canalisation</div>
-              <div className="text-lg mt-1 mb-3 text-left">Éviers, toilettes, baignoires… Nous débouchons avec du matériel haute pression.</div>
-              <a href="#" className="text-lg underline mt-auto text-left">En savoir plus &gt;</a>
+              <div className="text-md mt-1 mb-3 text-left">Éviers, toilettes, baignoires… Nous débouchons avec du matériel haute pression.</div>
+              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
             </div>
             <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
               <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
               <div className="text-left text-2xl font-bold">Rénovation salle de bain</div>
-              <div className="text-lg mt-1 mb-3 text-left">Transformation complète de votre salle de bain avec finitions soignées.</div>
-              <a href="#" className="text-lg underline mt-auto text-left">En savoir plus &gt;</a>
+              <div className="text-md mt-1 mb-3 text-left">Transformation complète de votre salle de bain avec finitions soignées.</div>
+              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ export default function Home() {
 
       <section className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
         <h2 className="text-4xl sm:text-6xl md:text-7xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
-        <p className="text-center text-black text-lg sm:text-sm max-w-2xl mb-6">
+        <p className="text-center text-black text-md sm:text-sm max-w-2xl mb-6">
           Chez <span className="text-[#3338C3]">Plombix</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
         </p>
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-8 md:mb-12 w-full items-center justify-center">
@@ -315,13 +315,13 @@ export default function Home() {
             >
               <polygon points="60,0 60,45 0,0" fill="#3338C3" />
             </svg>
-            <button className="text-lg relative z-40 bg-white text-black px-4 py-2 rounded-full shadow flex items-center gap-2 hover:cursor-pointer hover:scale-105 transition-all mt-2 md:mt-0">
+            <button className="text-md relative z-40 bg-white text-black px-4 py-2 rounded-full shadow flex items-center gap-2 hover:cursor-pointer hover:scale-105 transition-all mt-2 md:mt-0">
               📞  06 59 51 46 92
             </button>
           </div>
           <div className="w-full md:w-[55%] h-auto md:h-full bg-[#3338C3] flex flex-col justify-center text-right px-4 py-4 md:px-8 md:py-0">
             <div className="text-white text-xl mb-1 text-center md:text-right">Tarifs transparents & devis gratuits</div>
-            <div className="text-white text-lg text-center md:text-right">
+            <div className="text-white text-md text-center md:text-right">
               Contactez-nous dès maintenant pour obtenir votre devis gratuit et sans engagement. Notre équipe d&apos;experts est à votre disposition pour répondre à tous vos besoins.
             </div>
           </div>
@@ -329,7 +329,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="w-full h-[40vh] sm:h-[50vh] flex flex-col justify-center items-center text-black md:p-0 p-3">
-        <h2 className="text-4xl sm:text-6xl md:text-7xl mb-1 text-center">Et si vous étiez notre prochain témoignage ?</h2>
+        <h2 className="text-5xl sm:text-6xl md:text-7xl mb-1 text-center">Et si vous étiez notre prochain témoignage ?</h2>
         <p className="text-center text-black text-xs sm:text-sm max-w-2xl mt-3">
         Rejoignez les centaines de clients satisfaits partout en Île-de-France. Nous sommes prêts 
         à intervenir chez vous en moins de 30 minutes – rapide, propre, garanti.

@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-10 pt-6 text-left text-lg text-white/70">
+        <div className="border-t border-white/20 mt-10 pt-6 text-left text-md text-white/70">
           © 2025 Plombix – Tous droits réservés
         </div>
       </div>
