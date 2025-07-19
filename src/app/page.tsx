@@ -70,7 +70,7 @@ export default function Home() {
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
           </div>
         </div>
-        <div className="overflow-hidden bg-black py-2 sm:py-3 text-lg sm:text-lg rotate-1 text-white">
+        <div className="overflow-hidden bg-black py-4 sm:py-3 text-lg sm:text-lg rotate-1 text-white">
           <div className="flex whitespace-nowrap gap-10 animate-marquee">
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>

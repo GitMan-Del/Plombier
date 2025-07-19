@@ -16,7 +16,7 @@ export default function Footer() {
               Plombix.
             </h2>
             <p className="text-sm">
-              Plombix est votre partenaire de confiance pour tous vos besoins en plomberie à Paris et en Île-de-France. Interventions rapides, dépannage d&apos;urgence, installations et rénovations – avec professionnalisme, clarté et garantie.
+              Plombix est votre partenaire de confiance pour tous vos besoins en plomberie à Paris et en Île-de-France. Interventions rapides, dépannage d&apos;urgence, installations et rénovations avec professionnalisme, clarté et garantie.
             </p>
           </div>
 
