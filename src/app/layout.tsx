@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://plombierx.fr/",
     images: [
       {
-        url: "https://plombierx.fr/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Plombier Île-de-France - Plombier X"
