@@ -40,22 +40,32 @@ export default function Home() {
     <div className="w-full min-h-fit p-0 flex flex-col overflow-hidden">
     <Navbar />
     <main id="accueil" className="w-full h-screen bg-[#3338C3] text-white ">
-      <div className="w-full h-screen flex flex-col items-center justify-center relative z-20">
-      <Image src="/hero-plumber.png" loading="lazy" alt="img" width={1500} height={1500} className="absolute -bottom-3 right-0 z-10 w-full sm:w-2/3 md:w-1/2" />
-        <div className="w-full max-w-[90%] mx-auto p-0 flex flex-col gap-3 md:items-start md:text-start text-center items-center justify-center ">
+      <div className="w-full h-screen flex flex-col md:flex-row items-center justify-between relative z-20">
+        <div className="flex-1 flex flex-col gap-3 md:items-start md:text-start text-center items-center justify-center px-6 md:px-16 z-10">
           <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl text-white max-w-[800px] leading-tight">
-          Plombier à Paris et Île-de-France Intervention rapide & efficace
+            Plombier à Paris et Île-de-France Intervention rapide & efficace
           </h1>
-          <p className="text-md  text-white max-w-[800px]">
-          Fuite d’eau? Canalisation bouchée? Besoin d’un dépannage en urgence? Nos artisans plombiers interviennent 7j/7 à Paris, Val-de-Marne, Hauts-de-Seine, Seine-Saint-Denis et toute l’Île-de-France.
+          <p className="text-md text-white max-w-[800px]">
+            Fuite d’eau? Canalisation bouchée? Besoin d’un dépannage en urgence? Nos artisans plombiers interviennent 7j/7 à Paris, Val-de-Marne, Hauts-de-Seine, Seine-Saint-Denis et toute l’Île-de-France.
           </p>
           <div className="gap-4 flex flex-row items-center mt-5">
-          <button className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</button>
-          <a className="text-white hover:underline md:text-md  text-2xs" href="/aa">Explorez nos prestations →</a>
+            <button className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</button>
+            <a className="text-white hover:underline md:text-md text-2xs" href="/aa">Explorez nos prestations →</a>
+          </div>
+          <div className="w-[90%] gap-5 flex flex-row z-20 mt-8 md:mt-12">
+            <Image src="/social-whatsapp.png" alt="Social" width={30} height={30} className="hover:cursor-pointer hover:scale-110 transition-all" />
           </div>
         </div>
-        <div className="w-[90%] gap-5 absolute bottom-10 flex flex-row z-20 ">
-          <Image src="/social-whatsapp.png" alt="Social" width={30} height={30}  className="hover:cursor-pointer hover:scale-110 transition-all"/>
+        <div className="flex-1 h-full w-full relative hidden md:block">
+          <Image src="/hero-image.png" alt="a" fill className="object-contain object-right w-full h-full" />
+        </div>
+        <div className="absolute bottom-0 right-1/3 flex flex-row gap-4 items-end">
+        <div className="w-[214px] h-[230px] md:block bg-red-400 hidden relative">
+          <Image src="/hero2.png" alt="" width={214} height={296}  className="object-cover w-full h-full top-0"/>
+        </div>
+        <div className="w-[214px] h-[330px] bg-red-400 md:block hidden relative">
+          <Image src="/hero-3.png" alt="" width={214} height={321}  className="object-cover top-0"/>
+        </div>
         </div>
       </div>
     </main>
