@@ -4,17 +4,8 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative text-white font-poppins">
+    <footer className="relative text-white font-poppins bg-[#3338C3]">
       {/* Imaginea ca background */}
-      <div className="absolute inset-0 w-full h-full -z-10">
-        <Image
-          src="/footer-bg.svg"
-          alt="footer background"
-          fill
-          className="object-cover w-full h-full pointer-events-none select-none"
-          priority
-        />
-      </div>
 
       {/* Continutul peste imagine */}
       <div className="relative max-w-7xl mx-auto px-6 py-12">
