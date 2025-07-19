@@ -55,10 +55,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[90%] gap-5 absolute bottom-10 flex flex-row z-20 ">
-          <Image src="/social-facebook.png" alt="Social" width={30} height={30}  className="hover:cursor-pointer hover:scale-110 transition-all"/>
-          <Image src="/social-instagram.png" alt="Social" width={30} height={30} className="hover:cursor-pointer hover:scale-110 transition-all" />
-          <Image src="/social-linkedin.png" alt="Social" width={30} height={30}  className="hover:cursor-pointer hover:scale-110 transition-all"/>
-          <Image src="/social-x.png" alt="Social" width={30} height={30}         className="hover:cursor-pointer hover:scale-110 transition-all"/>
+          <Image src="/social-whatsapp.png" alt="Social" width={30} height={30}  className="hover:cursor-pointer hover:scale-110 transition-all"/>
         </div>
       </div>
     </main>
@@ -244,7 +241,7 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
-        <h2 className="text-4xl sm:text-6xl md:text-5xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
+        <h2 className="text-5xl  md:text-6xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
         <p className="text-center text-black text-md sm:text-sm max-w-2xl mb-6">
           Chez <span className="text-[#3338C3]">Plombix</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
         </p>
