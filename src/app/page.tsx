@@ -43,7 +43,7 @@ export default function Home() {
       <div className="w-full h-screen flex flex-col items-center justify-center relative z-20">
       <Image src="/hero-plumber.png" loading="lazy" alt="img" width={1500} height={1500} className="absolute -bottom-3 right-0 z-10 w-full sm:w-2/3 md:w-1/2" />
         <div className="w-full max-w-[90%] mx-auto p-0 flex flex-col gap-3 md:items-start md:text-start text-center items-center justify-center ">
-          <h1 className="text-7xl sm:text-7xl md:text-7xl lg:text-7xl text-white max-w-[800px] leading-tight">
+          <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl text-white max-w-[800px] leading-tight">
           Plombier à Paris et Île-de-France Intervention rapide & efficace
           </h1>
           <p className="text-md  text-white max-w-[800px]">
@@ -96,7 +96,7 @@ export default function Home() {
             height={80}
             className="rounded-xl object-cover md:block hidden justify-center  w-full h-[100px]"
           />
-          <h2 className="font-league text-7xl text-black leading-tight">
+          <h2 className="font-league text-5xl text-black leading-tight">
             Des interventions efficaces, des résultats concrets.
           </h2>
           <div className="flex md:flex-row items-start gap-3">
@@ -125,21 +125,21 @@ export default function Home() {
         </div>
         <div className="flex md:flex-col justify-between md:w-[18%] md:min-w-[150px] w-full text-black font-poppins">
           <div>
-            <div className="text-7xl text-center md:text-start">12+</div>
+            <div className="text-5xl text-center md:text-start">12+</div>
             <div className="text-md text-center md:text-start">ann&eacute;es d&apos;exp&eacute;rience dans la plomberie</div>
           </div>
           <div>
-            <div className="text-7xl text-center md:text-start">1</div>
+            <div className="text-5xl text-center md:text-start">1</div>
             <div className="text-md text-center md:text-start">objectif: votre satisfaction</div>
           </div>
           <div>
-            <div className="text-7xl text-center md:text-start">400+</div>
+            <div className="text-5xl text-center md:text-start">400+</div>
             <div className="text-md text-center md:text-start">interventions réussies chaque mois</div>
           </div>
         </div>
       </section>
       <section id="tarifs" className="w-full py-10 sm:py-14 md:py-16 bg-white flex flex-col items-center">
-        <h2 className="text-3xl sm:text-6xl md:text-7xl font-league text-black text-center mb-2">
+        <h2 className="text-3xl sm:text-6xl md:text-5xl font-league text-black text-center mb-2">
           Ils parlent de nous mieux que personne.
         </h2>
         <p className="text-center text-black text-2xs  max-w-2xl mb-1">
@@ -207,7 +207,7 @@ export default function Home() {
       <section id="services" className="-space-y-5 z-20 min-w-[80%] md:p-0  p-2">
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 w-full max-w-6xl mx-auto items-center justify-center mt-8">
           <div className="bg-white rounded-xl shadow border p-6 sm:p-8 flex flex-col items-start justify-center w-full md:w-[1200px]">
-            <h2 className="text-3xl sm:text-6xl md:text-7xl mb-2 font-league text-black leading-tight text-left">
+            <h2 className="text-3xl sm:text-6xl md:text-5xl mb-2 font-league text-black leading-tight text-left">
               Vous avez un besoin?<br />Nous avons la solution.
             </h2>
             <p className="text-md  text-black mt-4 text-left">
@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
-        <h2 className="text-4xl sm:text-6xl md:text-7xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
+        <h2 className="text-4xl sm:text-6xl md:text-5xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
         <p className="text-center text-black text-md sm:text-sm max-w-2xl mb-6">
           Chez <span className="text-[#3338C3]">Plombix</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
         </p>
@@ -329,7 +329,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="w-full h-[40vh] sm:h-[50vh] flex flex-col justify-center items-center text-black md:p-0 p-3">
-        <h2 className="text-5xl sm:text-6xl md:text-7xl mb-1 text-center">Et si vous étiez notre prochain témoignage ?</h2>
+        <h2 className="text-5xl sm:text-6xl md:text-5xl mb-1 text-center">Et si vous étiez notre prochain témoignage ?</h2>
         <p className="text-center text-black text-xs sm:text-sm max-w-2xl mt-3">
         Rejoignez les centaines de clients satisfaits partout en Île-de-France. Nous sommes prêts 
         à intervenir chez vous en moins de 30 minutes – rapide, propre, garanti.
