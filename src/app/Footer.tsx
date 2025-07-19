@@ -5,13 +5,12 @@ import { MapPin, Phone, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="relative text-white font-poppins bg-[#3338C3]">
-      {/* Imaginea ca background */}
 
-      {/* Continutul peste imagine */}
+
       <div className="relative max-w-7xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-          {/* Logo & Description */}
           <div className="md:w-1/3">
+
             <h2 className="text-4xl font-league mb-3 flex items-center gap-2">
               <Image src="/logo-plombix.png" width={30} height={30} alt="Plombix" />
               Plombix.
@@ -21,7 +20,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="md:w-1/3">
             <h3 className="text-white tracking-widest  text-xl mb-4">Liens rapides</h3>
             <ul className="space-y-2 text-sm">
@@ -32,7 +30,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="md:w-1/3">
             <h3 className="text-white text-xl mb-4 tracking-widest">Coordonnées</h3>
             <ul className="space-y-3 text-sm">
@@ -55,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-10 pt-6 text-left text-xs text-white/70">
+        <div className="border-t border-white/20 mt-10 pt-6 text-left text-lg text-white/70">
           © 2025 Plombix – Tous droits réservés
         </div>
       </div>

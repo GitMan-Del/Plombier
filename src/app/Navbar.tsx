@@ -23,14 +23,14 @@ const Navbar = () => {
       className="w-full flex items-center justify-between py-2 fixed top-0 left-0 z-[100] h-14 transition-colors duration-300 text-white bg-black/60 md:bg-black/20 md:backdrop-blur-[5px]"
     >
       <div className="mx-auto w-[90%] flex flex-row items-center justify-between">
-        {/* LOGO */}
+
         <div className="flex items-center gap-2">
           <Image src="/logo-plombix.png" alt="logo" width={30} height={30} />
           <span className="font-league text-2xl font-bold">
             Plombix<span className="text-[#00B8D9]">.</span>
           </span>
         </div>
-        {/* MENIU - Desktop */}
+
         <ul className="hidden md:flex gap-8 text-sm font-poppins">
           <li>
             <a
@@ -69,14 +69,14 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        {/* BUTON DREAPTA - Desktop */}
+
         <a
           href="#contact"
           className={`hidden md:inline-block btn font-poppins text-sm px-5 py-2 hover:cursor-pointer hover:scale-105 transition-all text-black bg-white`}
         >
           Prendre rendez-vous
         </a>
-        {/* Hamburger - Mobile */}
+
         <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
           onClick={() => setSidebarOpen(true)}
@@ -93,7 +93,7 @@ const Navbar = () => {
           ></span>
         </button>
       </div>
-      {/* Sidebar - Mobile */}
+
       <div
         className={`fixed inset-0 z-[9999] transition-all duration-300 ${
           sidebarOpen ? "visible opacity-100" : "invisible opacity-0"
