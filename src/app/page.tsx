@@ -52,9 +52,10 @@ export default function Home() {
             <a href="tel:0659514692" className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</a>
             <a className="text-white hover:underline md:text-md text-2xs" href="#services">Explorez nos prestations →</a>
           </div>
-          <div className="w-[90%] gap-5 flex flex-row z-20 mt-8 md:mt-12">
+          <a href="https://wa.me/33659514692?text=Bonjour%2C+je+souhaite+prendre+un+rendez-vous+avec+vous+pour+un+projet+de+menuiserie." target="_blank" rel="noopener noreferrer"
+             className="w-[90%] gap-5 flex flex-row z-20 mt-8 md:mt-12">
             <Image src="/social-whatsapp.png" alt="Social" width={30} height={30} className="hover:cursor-pointer hover:scale-110 transition-all" />
-          </div>
+          </a>
         </div>
         <div className="flex-1 h-full w-full relative hidden md:block">
           <Image src="/hero-image.png" alt="a" fill className="object-contain object-right w-full h-full" />
@@ -64,7 +65,7 @@ export default function Home() {
           <Image src="/hero2.png" alt="" width={214} height={296}  className="object-cover w-full h-full top-0"/>
         </div>
         <div className="w-[214px] h-[330px] bg-red-400 md:block hidden relative">
-          <Image src="/hero-3.png" alt="" width={214} height={321}  className="object-cover top-0"/>
+          <Image src="/hero-3.png" alt="" width={214} height={321}   className="object-cover top-0"/>
         </div>
         </div>
       </div>

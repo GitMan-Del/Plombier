@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Plombier Île-de-France | Interventions Rapides 24/7 | PlombierX.fr",
     description:
       "Plombier agréé en Île-de-France. Interventions rapides 24h/24 et 7j/7 pour réparations, installations et urgences sanitaires à Paris et en Île-de-France.",
-    url: "https://plombierx.fr/",
+    url: "https://plombier-x.fr/",
     images: [
       {
         url: "/og-image.png",
