@@ -49,8 +49,8 @@ export default function Home() {
             Fuite d’eau? Canalisation bouchée? Besoin d’un dépannage en urgence? Nos artisans plombiers interviennent 7j/7 à Paris, Val-de-Marne, Hauts-de-Seine, Seine-Saint-Denis et toute l’Île-de-France.
           </p>
           <div className="gap-4 flex flex-row items-center mt-5">
-            <button className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</button>
-            <a className="text-white hover:underline md:text-md text-2xs" href="/aa">Explorez nos prestations →</a>
+            <a href="tel:0659514692" className="btn bg-white text-black text-2xs md:text-md hover:cursor-pointer hover:scale-105 transition-all">📞 06 59 51 46 92</a>
+            <a className="text-white hover:underline md:text-md text-2xs" href="#services">Explorez nos prestations →</a>
           </div>
           <div className="w-[90%] gap-5 flex flex-row z-20 mt-8 md:mt-12">
             <Image src="/social-whatsapp.png" alt="Social" width={30} height={30} className="hover:cursor-pointer hover:scale-110 transition-all" />
@@ -69,7 +69,9 @@ export default function Home() {
         </div>
       </div>
     </main>
-      <section id="services" className="-space-y-15 z-20 min-w-fit">
+
+      {/* SEPARATOR */}
+      <section className="-space-y-15 z-20 min-w-fit">
         <div className="overflow-hidden bg-[#3338C3] py-4 sm:py-3 text-md sm:text-md -rotate-1 text-white">
           <div className="flex whitespace-nowrap gap-10 animate-marquee">
             <p>Besoin d’un plombier ? On intervient en moins de 30 minutes à Paris et en Île-de-France !</p>
@@ -94,6 +96,8 @@ export default function Home() {
           }
         `}</style>
       </section>
+    
+    
       <section className="w-full  md:max-w-[90%] h-fit mx-auto flex flex-col  md:flex-row gap-8 py-12 px-4 md:items-stretch items-center">
         <div className="flex md:text-left text-center flex-col gap-6 md:w-[30%] ">
           <Image
@@ -124,7 +128,7 @@ export default function Home() {
             className="rounded-3xl object-cover w-full "
           />
           <a
-            href="#"
+            href="#nos-clients"
             className="hover:cursor-pointer hover:scale-105 transition-all absolute bottom-3 right-0 bg-[#3338C3] text-white font-poppins rounded-full px-8 py-5 shadow-lg text-xs font-semibold"
           >
             Découvrez pourquoi nos clients nous recommandent
@@ -145,7 +149,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tarifs" className="w-full py-10 sm:py-14 md:py-16 bg-white flex flex-col items-center">
+    
+    
+      <section id="nos-clients" className="w-full py-10 sm:py-14 md:py-16 bg-white flex flex-col items-center">
         <h2 className="text-5xl md:text-6xl font-league text-black text-center mb-2">
           Ils parlent de nous mieux que personne.
         </h2>
@@ -250,7 +256,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
+
+      <section id="tarifs" className="w-full flex flex-col items-center py-10 sm:py-14 md:py-16 bg-white md:p-0 p-2">
         <h2 className="text-5xl  md:text-6xl font-league text-black text-center mb-2">Tarifs transparents & devis gratuits</h2>
         <p className="text-center text-black text-md sm:text-sm max-w-2xl mb-6">
           Chez <span className="text-[#3338C3]">Plombier X</span>, vous savez à quoi vous attendre. Nos prix sont clairs, sans surprise, et chaque intervention fait l&apos;objet d&apos;un devis personnalisé, <span className="text-[#3338C3] underline cursor-pointer">gratuit et sans engagement</span>.
@@ -319,9 +326,12 @@ export default function Home() {
             >
               <polygon points="60,0 60,45 0,0" fill="#3338C3" />
             </svg>
-            <button className="text-md relative z-40 bg-white text-black px-4 py-2 rounded-full shadow flex items-center gap-2 hover:cursor-pointer hover:scale-105 transition-all mt-2 md:mt-0">
+            <a
+              href="tel:0659514692"
+              className="text-md relative z-40 bg-white text-black px-4 py-2 rounded-full shadow flex items-center gap-2 hover:cursor-pointer hover:scale-105 transition-all mt-2 md:mt-0"
+            >
               📞  06 59 51 46 92
-            </button>
+            </a>
           </div>
           <div className="w-full md:w-[55%] h-auto md:h-full bg-[#3338C3] flex flex-col justify-center text-right px-4 py-4 md:px-8 md:py-0">
             <div className="text-white text-xl mb-1 text-center md:text-right">Tarifs transparents & devis gratuits</div>
@@ -332,13 +342,18 @@ export default function Home() {
         </div>
       </section>
 
+
       <section id="contact" className="w-full h-[40vh] sm:h-[50vh] flex flex-col justify-center items-center text-black md:p-0 p-3">
         <h2 className="text-5xl sm:text-6xl md:text-5xl mb-1 text-center">Et si vous étiez notre prochain témoignage?</h2>
         <p className="text-center text-black text-xs sm:text-sm max-w-2xl mt-3">
         Rejoignez les centaines de clients satisfaits partout en Île-de-France. Nous sommes prêts 
         à intervenir chez vous en moins de 30 minutes rapide, propre, garanti.
         </p>
-      <button className="btn bg-black text-white mt-5 hover:cursor-pointer hover:scale-105 transition-all">Obtenez -15% maintenant</button>
+      
+      <a href="https://search.google.com/local/writereview?placeid=ChIJTaO8Yl115kcR0wusPwK2I40" target="_blank" rel="noopener noreferrer"
+      className="btn bg-black text-white mt-5 hover:cursor-pointer hover:scale-105 transition-all">
+        Obtenez -15% maintenant
+      </a>
       </section>
 
       <Footer />

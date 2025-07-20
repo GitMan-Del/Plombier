@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/tarifs"
+              href="#tarifs"
               className="hover:underline"
               style={undefined}
             >
@@ -112,7 +112,7 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-between px-4 py-3 border-b">
             <div className="flex items-center gap-2">
-              <Image src="/logo-plombierx.png" alt="logo" width={30} height={30} />
+              <Image src="/logo-plombix.png" alt="logo" width={30} height={30} />
               <span className="font-league text-2xl font-bold text-black">
                 Plombier X<span className="text-[#00B8D9]">.</span>
               </span>
@@ -146,7 +146,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/tarifs"
+                href="#tarifs"
                 className="hover:underline"
                 onClick={() => setSidebarOpen(false)}
               >
