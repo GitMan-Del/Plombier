@@ -33,6 +33,63 @@ export default function Home() {
   const handlePrev = () => setTestimonialIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   const handleNext = () => setTestimonialIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
+  // SERVICES DATA
+  const services = [
+    {
+      title: "Dépannage express",
+      desc: "Notre équipe intervient en moins de 30 minutes pour toute fuite ou problème urgent.",
+      color: "bg-[#3338C3] text-white",
+      border: "",
+      more: "En savoir plus >",
+    },
+    {
+      title: "Installation sanitaire",
+      desc: "Pose ou remplacement de WC, lavabos, robinetterie, ballon d’eau chaude clé en main.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+    {
+      title: "Débouchage canalisation",
+      desc: "Éviers, toilettes, baignoires… Nous débouchons avec du matériel haute pression.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+    {
+      title: "Rénovation salle de bain",
+      desc: "Transformation complète de votre salle de bain avec finitions soignées.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+    // NEW SERVICES
+    {
+      title: "Débouchage et curage de canalisations",
+      desc: "Nous utilisons un hydrocureur haute pression avec curage préalable. Solutions écologiques, efficaces et garanties.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+    {
+      title: "Fosse septique et bac à graisse",
+      desc: "Installation conforme aux normes. Contactez-nous pour la pose ou la modification de vos canalisations.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+    {
+      title: "Vidange de fosse septique",
+      desc: "Dès que les boues atteignent 50 % du volume, une vidange est indispensable pour éviter les engorgements.",
+      color: "bg-white text-black border",
+      border: "border",
+      more: "En savoir plus >",
+    },
+  ];
+  const [serviceIndex, setServiceIndex] = useState(0); // 0: first 4, 1: last 3
+  const handleServicePrev = () => setServiceIndex((prev) => (prev === 0 ? 1 : 0));
+  const handleServiceNext = () => setServiceIndex((prev) => (prev === 1 ? 0 : 1));
+
 
   return (
 
@@ -219,7 +276,8 @@ export default function Home() {
       </section>   
 
       <section id="services" className="-space-y-5 z-20 min-w-[80%] md:p-0  p-2">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 w-full max-w-6xl mx-auto items-center justify-center mt-8">
+        {/* Desktop Carousel */}
+        <div className="hidden md:flex flex-col gap-8 w-full max-w-6xl mx-auto items-center justify-center mt-8">
           <div className="bg-white rounded-xl shadow border p-6 sm:p-8 flex flex-col items-start justify-center w-full md:w-[1200px]">
             <h2 className="text-3xl sm:text-6xl md:text-5xl mb-2 font-league text-black leading-tight text-left">
               Vous avez un besoin?<br />Nous avons la solution.
@@ -228,32 +286,41 @@ export default function Home() {
               Que ce soit o urgence sau proiect de renovare, intervenim rapid cu profesionalism.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full md:w-auto p-2">
-            <div className="bg-[#3338C3] rounded-xl p-5 text-white shadow flex flex-col min-h-[150px]">
-              <div className="w-5 h-5 bg-gray-300 rounded mb-2" />
-              <div className="text-left text-2xl font-bold">Dépannage express</div>
-              <div className="text-md mt-1 mb-3 text-left">Notre équipe intervient en moins de 30 minutes pour toute fuite ou problème urgent.</div>
-              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
+          <div className="relative w-full">
+            <button onClick={handleServicePrev} className="absolute left-[-50px] top-1/2 -translate-y-1/2 z-10 bg-[#3338C3] text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:scale-110 transition-all">
+              &#8592;
+            </button>
+            <div className={`w-full flex justify-center`}>
+              <div className={`grid gap-4 ${serviceIndex === 0 ? 'grid-cols-4' : 'grid-cols-3'}`}>
+                {services.slice(serviceIndex === 0 ? 0 : 4, serviceIndex === 0 ? 4 : 7).map((service) => (
+                  <div key={service.title} className={`${service.color} ${service.border} rounded-xl p-5 shadow flex flex-col min-h-[150px]`}>
+                    <div className="w-5 h-5 bg-gray-300 rounded mb-2" />
+                    <div className="text-left text-2xl font-bold">{service.title}</div>
+                    <div className="text-md mt-1 mb-3 text-left">{service.desc}</div>
+                    <a href="tel:0659514692" className="text-md underline mt-auto text-left">{service.more}</a>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
-              <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
-              <div className="text-left text-2xl font-bold">Installation sanitaire</div>
-              <div className="text-md mt-1 mb-3 text-left">Pose ou remplacement de WC, lavabos, robinetterie, ballon d’eau chaude clé en main.</div>
-              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
-            </div>
-            <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
-              <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
-              <div className="text-left text-2xl font-bold">Débouchage canalisation</div>
-              <div className="text-md mt-1 mb-3 text-left">Éviers, toilettes, baignoires… Nous débouchons avec du matériel haute pression.</div>
-              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
-            </div>
-            <div className="bg-white rounded-xl p-5 text-black border shadow flex flex-col min-h-[150px]">
-              <div className="w-5 h-5 bg-gray-400 rounded mb-2" />
-              <div className="text-left text-2xl font-bold">Rénovation salle de bain</div>
-              <div className="text-md mt-1 mb-3 text-left">Transformation complète de votre salle de bain avec finitions soignées.</div>
-              <a href="#" className="text-md underline mt-auto text-left">En savoir plus &gt;</a>
-            </div>
+            <button onClick={handleServiceNext} className="absolute right-[-50px] top-1/2 -translate-y-1/2 z-10 bg-[#3338C3] text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:scale-110 transition-all">
+              &#8594;
+            </button>
           </div>
+          <div className="flex flex-row gap-2 mt-4">
+            <button onClick={() => setServiceIndex(0)} className={`w-3 h-3 rounded-full ${serviceIndex === 0 ? 'bg-[#3338C3]' : 'bg-gray-300'}`}></button>
+            <button onClick={() => setServiceIndex(1)} className={`w-3 h-3 rounded-full ${serviceIndex === 1 ? 'bg-[#3338C3]' : 'bg-gray-300'}`}></button>
+          </div>
+        </div>
+        {/* Mobile: All services stacked */}
+        <div className="w-full md:hidden flex flex-col items-center gap-4 p-2 mt-8">
+          {services.map((service) => (
+            <div key={service.title} className={`${service.color} ${service.border} rounded-xl p-5 shadow flex flex-col min-h-[150px] w-full max-w-[500px]`}>
+              <div className="w-5 h-5 bg-gray-300 rounded mb-2" />
+              <div className="text-left text-2xl font-bold">{service.title}</div>
+              <div className="text-md mt-1 mb-3 text-left">{service.desc}</div>
+              <a href="tel:0659514692" className="text-md underline mt-auto text-left">{service.more}</a>
+            </div>
+          ))}
         </div>
       </section>
 
