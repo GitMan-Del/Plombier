@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { League_Gothic, Poppins } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const league = League_Gothic({
   variable: "--font-league-gothic",
@@ -64,6 +65,19 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-1003293596"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-1003293596');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
